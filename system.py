@@ -8,13 +8,13 @@ while True:
     if op == 1:
         qtd = int(input("Quantas unidades adicionar: "))
         qtd_atual = qtd_atual + qtd
-        print(f"Quantidade atual: {qtd_atual}")
+        print(f"Estoque Atualizado! Quantidade atual: {qtd_atual}")
     elif op == 2:
         print(f"Quantidade Atual: {qtd_atual}")
         qtd_sell = int(input("Quantas unidades voce quer vender: "))
         if qtd_atual >= qtd_sell:
             qtd_atual = qtd_atual - qtd_sell
-            print(f"Vendido! Quantidade atual: {qtd_atual}")
+            print(f"Estoque Atualizado! Quantidade atual: {qtd_atual}")
         else:
             print(f"Quantidade Indisponivel")
             continue
